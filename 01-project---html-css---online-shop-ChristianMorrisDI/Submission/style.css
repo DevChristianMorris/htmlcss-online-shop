@@ -1,0 +1,133 @@
+html {
+    border: 1rem solid #8bdf83;
+}
+body {
+    background-color: #3F6660;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+ul {
+    list-style-type: none;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 5rem;
+}
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+a, .productdescription, .producttitle, .contactdetails {
+    color: #FEFFFE;
+}
+.productdescription, .contactinfo, .contacttitle, .contactbutton {
+    text-align: center;
+}
+.fishhooks img, .dolphins img, .tradescantia img {
+    padding-top: 3rem;
+}
+.fishhooks, .dolphins, .tradescantia  {
+    color: #FEFFFE;
+    font-size: 1.5rem;
+    text-align: left;
+}
+.buynow {
+    text-align: center;
+}
+
+.buynow input[type=submit] {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.form {
+    width: auto;
+  clear: both;
+  padding-right: 0.8rem;
+}
+
+.form input {
+    width: 100%;
+    clear: both;
+}
+.contactbutton {
+
+    padding-top: 1rem;
+}
+.contactbutton :hover {
+    cursor: pointer;
+    background-color: #8bdf83;
+}
+
+.message {
+    height: 2rem;
+}
+
+@media only screen and (min-width: 50rem) {
+    .nav ul {
+        display: grid;
+        grid-template-columns: min-content min-content;
+    }
+    .header {
+        display: grid;
+        grid-template-columns: 20rem auto;
+    }
+    .header .nav{
+        justify-self: center;
+        align-self: center;
+    }
+    .header .nav a {
+        padding: 2rem;
+    }
+    .products, .contactdetails {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5rem;
+}
+    .productcontainer {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 3rem;
+        
+    }
+    .buynow, .productdescription, .contactinfo {
+    text-align: left;
+    }
+    .plantsimg {
+        padding-top: 2.2rem;
+        padding-left: 2.2rem;
+    }
+    .contactdetails {
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width: 75rem) {
+    .nav ul {
+        font-size: 4rem;
+    }
+    .header {
+        display: grid;
+    }
+    .header .nav {
+        justify-self: right;
+    }
+    .header .nav a {
+        padding: 5rem;
+    }
+    .products {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .plantsimg {
+        padding-bottom: 2.2rem;
+    }
+    .productdescription {
+        font-size: 1.4rem;
+    } 
+    .contactdetails {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    }
